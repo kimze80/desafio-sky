@@ -1,0 +1,133 @@
+.footer {
+  background: #f1f2fa;
+  .social-media {
+    // background: #f1f2fa;
+    padding: 16px;
+    border-top: 1px solid rgba(80, 80, 80, 0.15);
+    border-bottom: 1px solid rgba(80, 80, 80, 0.15);;
+
+    .media-icons {
+      align-self: flex-end;
+
+      span:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      i {
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.6);
+
+        &:hover {
+          color: #f35c58;
+          transition: .4s;
+        }
+      }
+    }
+  }
+
+  .sitemap {
+    // background: #f1f2fa;
+    // padding: 36px 0 36px;
+    .sky-app {
+      display: flex;
+      img {
+        height: 50px;
+        margin-right: 20px;
+      }
+      div {
+        width: 280px;
+        line-height: 20px;
+        align-self: center;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .col-app {
+      margin: 36px 0;
+      .app-store {
+        margin: 20px 0 0 70px;
+  
+        span:not(:last-child) {
+          margin-right: 20px;
+
+        }
+        img {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .col-sitemap {
+      margin: 36px 0;
+      .main-link {
+        margin-bottom: 10px;
+
+        a {
+          color: rgba(0, 0, 0, 0.6);
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+      ul {
+        margin-bottom: 1.6rem;
+        li {
+          font-size: 0.87rem;
+          list-style: none;
+          line-height: 30px;
+  
+          a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.87);
+  
+            &:hover {
+              color: #f35c58;
+              transition: .5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .links {
+    background: white;
+    padding: 14px;
+
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.87);
+
+      &:hover {
+        color: #f35c58;
+        transition: .5s;
+      }
+    }
+  }
+
+  .all-rights {
+    padding: 14px;
+    p {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .social-media {
+    img {
+      height: 26px;
+    }
+
+    .media-icons {
+      i {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  .app-store {
+    display: none;
+  }
+}

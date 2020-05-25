@@ -1,0 +1,81 @@
+// Movies Categories List
+
+.movies {
+  margin-bottom: 40px;
+
+  h5 {
+    font-weight: bold;
+    padding-left: 6%;
+  }
+
+  .category-movies {
+    height: 260px;
+    padding-left: 6%;
+    padding-right: 6%;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        width: auto;
+        img {
+          height: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      display: none;
+      height: 54px;
+      width: 54px;
+      border-radius: 50px;
+      background: rgba(black, 0.8);
+      color: white;
+    }
+
+    .swiper-button-prev {
+      left: -27px;
+      justify-content: flex-end;
+    }
+
+    .swiper-button-prev::after {
+      font-size: small;
+      margin-right: 12px;
+    }
+
+    .swiper-button-next {
+      right: -27px;
+      justify-content: flex-start;
+    }
+
+    .swiper-button-next::after {
+      font-size: small;
+      margin-left: 12px;
+    }
+
+    &:hover {
+      .swiper-button-next, .swiper-button-prev {
+        display: flex !important;
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 769px) {
+  .movies {
+    .category-movies {
+      height: 210.4px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .movies {
+    h5 {
+      font-size: 16px;
+    }
+    .category-movies {
+      height: 190px;
+    }
+  }
+}
