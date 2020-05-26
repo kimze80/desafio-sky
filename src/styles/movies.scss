@@ -15,10 +15,29 @@
 
     .swiper-wrapper {
       .swiper-slide {
+        position: relative;
         width: auto;
         img {
           height: 100%;
           border-radius: 5px;
+        }
+
+        .fa-shopping-cart {
+          position: absolute;
+          background: rgba(black, 0.6);
+          right: 5px;
+          top: 5px;
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          color: white;
+          font-size: 14px;
+          border: 2px solid;
+          text-align: -webkit-center;
+
+          &::before {
+            vertical-align: -webkit-baseline-middle;
+          }
         }
       }
     }
@@ -76,6 +95,16 @@
     }
     .category-movies {
       height: 190px;
+    }
+
+    .swiper-wrapper {
+      .swiper-slide {
+        .fa-shopping-cart {
+          width: 25px !important;
+          height: 25px !important;
+          font-size: 11px !important;
+        }
+      }
     }
   }
 }
